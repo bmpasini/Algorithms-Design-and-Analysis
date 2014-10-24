@@ -54,3 +54,4 @@ end
 arr = InversionsCount.parse_file
 InversionsCount.count_inversions(arr) # => 2407905288
 # p sorted_arr = MergeSort.mergesort(arr)
+

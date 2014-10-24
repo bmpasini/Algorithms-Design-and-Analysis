@@ -44,7 +44,7 @@ class InversionsCount < MergeSort
 					sorted_arr << left.shift
 				else
 					sorted_arr << right.shift
-					@@number_of_inversions += left.count
+					@@number_of_inversions += left.length
 				end
 	  	end
 	  	sorted_arr + left + right

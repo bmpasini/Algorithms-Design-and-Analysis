@@ -30,10 +30,10 @@ end
 
 class InversionsCount < MergeSort
   def self.count_inversions(arr)
-  	@@number_of_inversions = 0
+  	@number_of_inversions = 0
   	mergesort(arr)
-  	puts "There are #{@@number_of_inversions} inversions."
-  	@@number_of_inversions
+  	puts "There are #{@number_of_inversions} inversions."
+  	@number_of_inversions
   end
 	
 	private 
@@ -44,7 +44,7 @@ class InversionsCount < MergeSort
 					sorted_arr << left.shift
 				else
 					sorted_arr << right.shift
-					@@number_of_inversions += left.length
+					@number_of_inversions += left.length
 				end
 	  	end
 	  	sorted_arr + left + right
